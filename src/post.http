@@ -1,0 +1,41 @@
+POST http://localhost:3333/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "josase",
+    "email": "jose@jose.com"
+
+}
+
+###
+
+POST http://localhost:3333/surveys HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Queremos ouvir sua opinião",
+    "description": "De 0 a 10, quanto você recomendaria nosso produto?"
+
+}
+###
+GET http://localhost:3333/surveys HTTP/1.1
+###
+GET http://localhost:3333/users HTTP/1.1
+###
+POST http://localhost:3333/sendMail HTTP/1.1
+content-type: application/json
+
+{
+    "email": "jose@jsose",
+    "survey_id": "29e881e2-05c7-4100-80eb-f9e9bdf0424e"
+
+}
+###
+POST http://localhost:3333/nps HTTP/1.1
+content-type: application/json
+
+{
+    "email": "jose@jose",
+    "survey_id": "29e881e2-05c7-4100-80eb-f9e9bdf0424e"
+
+}
